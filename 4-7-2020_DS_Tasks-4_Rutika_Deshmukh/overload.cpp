@@ -80,7 +80,7 @@ int main()
     int r;
     student s1;
     s1.getInput();
-    cout << "rank (if unknown put 0) :" << r ;
+    cout << "rank (if unknown put 0) :" << endl;
     cin >> r;
     if (r == 0 )
     {

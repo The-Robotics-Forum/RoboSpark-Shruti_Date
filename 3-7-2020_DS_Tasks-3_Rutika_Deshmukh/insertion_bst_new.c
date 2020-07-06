@@ -30,17 +30,13 @@
      {
          if(after->right == NULL)
          {
-             after->right == new;
-         }
-         else if(new->data < after->right->data)
-         {
-             new->right = after->right;
              after->right = new;
          }
-         else 
+         else
          {
-         add(new, after->right);
+             add(new, after->right);
          }
+
      }
  
 
@@ -51,24 +47,21 @@
      {
          if(after->left == NULL)
          {
-             after->left == new;
-         }
-         else if(new->data > after->left->data)
-         {
-             new->left = after->left;
              after->left = new;
          }
-         else 
+         else
          {
-         add(new, after->left);
+             add(new, after->left);
          }
+
      }
 
      else
      {
-        printf("Please check the arguments"); 
+        printf("\nPlease check the arguments"); 
      }
-     printf("Added sucessfully!!!");
+     //printf("Added sucessfully!!!");
+     return new;
  }
 
 
@@ -108,7 +101,8 @@ void postOrder (struct node* root)
 
 
     //Creating node for each arr element:
-
+    
+    printf("Data in the nodes created is as follows: ");
     struct node* n[10];
     for (i=0; i<10; i++)
     {
@@ -122,7 +116,7 @@ void postOrder (struct node* root)
     {
         add(n[i],n[0]);
     }
-     
+    
      
     // Insertion 
     
@@ -134,7 +128,7 @@ void postOrder (struct node* root)
 
     // post order traversal:
     printf("Post Order Traversal : ");
-    postOrder(n[6]);
+    postOrder(n[0]);
     printf("\n");
     
 
