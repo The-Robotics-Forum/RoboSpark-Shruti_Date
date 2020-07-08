@@ -1,0 +1,8 @@
+Data Structures : Session 1 (02/07/2020)
+Question 1:
+Need of Data Type in C?
+A DataType in programming language, is a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be performed on those variables. Data Type allots the significant amount of memory which is required for the specific variable. It also help to specify what type of data is required from the user.
+
+Question 2:
+Error of %s ?
+The error occurred due to the spaces in “Let us C” statement. C considers  “ “ (space) as null “/0” so it stops reading or scanning the parts after spaces. T scan a statement with spaces we can use gets() function.
