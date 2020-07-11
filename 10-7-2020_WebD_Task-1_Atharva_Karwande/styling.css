@@ -1,0 +1,33 @@
+html{
+    height: 100%;
+    background: -webkit-linear-gradient(to top left, #ff99cc 0%, #ffffff 100%);/* For safari and chrome browser*/
+    background: -o-linear-gradient(to top left, #ff99cc 0%, #ffffff 100%);/* For opera browser*/
+    background: -moz-linear-gradient(to top left, #ff99cc 0%, #ffffff 100%);/* For firefox browser*/
+    background: linear-gradient(to top left, #ff99cc 0%, #ffffff 100%);/*Standard Syntax*/
+    text-align: center;
+}
+
+
+
+h1 {
+    color: black;
+    font-family: cursive;
+}
+
+
+#about-section{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: maroon;
+}
+
+.project-title{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#education ul{
+    align-items: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+
+}
