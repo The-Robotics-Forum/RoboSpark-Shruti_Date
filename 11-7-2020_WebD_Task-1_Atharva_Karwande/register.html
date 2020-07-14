@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--charset is telling browser that we are using UTF-8 encoding,
+        it is like ASCII but ASCII has limited characterset which is of no use in real world-->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!--CDN link for fontawesome icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!--link to external css file-->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!--Registration form starts-->
+    <form method="POST" action="registration.php" class="login-box">
+        <h1>Registeration</h1>
+        <div class="textbox form_input">
+            <!--we want fontawesome icon to be in inline,
+            so we use <i> tag which is inline tag. (we can also use other inline tag like <span>, <a>, etc) -->
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="uname" placeholder="Enter Username" />
+        </div>
+        <div class="f_name form_input">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="firstname" placeholder="First Name">
+        </div>
+        <div class="l_name form_input">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="lastname" placeholder="Last Name">
+        </div>
+        <div class="l_name form_input">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="l_name form_input">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>
+            <input type="text" name="proname" placeholder="Project Name">
+        </div>
+        <div class="l_name form_input">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <input type="text" name="description" placeholder="Project Description">
+        </div>
+        <div class="passbox form_input">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" name="password" placeholder="Create password" />
+        </div>
+        <input type="submit" name="submit" value="SIGN IN" class="submit-btn" /> 
+        <p class="login_opt">Do you have account! <a href="login.html">Login Here</a></p>
+    </form>
+</body>
+</html>
+
+<!--NOTE: difference between id and class:
+            id is unique and it is given to only one element 
+            class can be applied to any number of elements-->
