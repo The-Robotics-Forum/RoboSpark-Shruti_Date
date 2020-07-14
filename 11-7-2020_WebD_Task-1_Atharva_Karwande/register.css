@@ -1,0 +1,107 @@
+/*applies for whole body*/
+html{
+    background: linear-gradient(to bottom left, #ff66ff 0%, #6600ff 100%);
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    /*background-color: orange;*/
+}
+
+.login-box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+
+ .login-box h1 {
+     float: left;
+     font-size: 40px;
+     border-bottom: 6px solid black;
+     margin-bottom: 50px;
+     padding: 13px 0;
+ }
+
+ .form_input{
+     width: 100%;
+     overflow: hidden;
+     font-size: 20px;
+     padding: 8px 0;
+     margin: 15px 0;
+     border-bottom: 1px solid;
+ }
+
+ .textbox:focus, .passbox:focus{
+    border-bottom: 10px solid;
+ }
+
+ .form_input i{
+     width: 26px;
+     float: left;
+     text-align: center; 
+ }
+
+ .form_input input {
+     border: none;
+     background: none;
+     outline: none;
+     color: black;
+     font-size: 18px;
+     width: 80%;
+     float: left;
+     margin: 0 10px;
+ }
+
+ ::placeholder { 
+    color: black;
+   
+  }
+
+
+ .submit-btn{
+     width: 100%;
+     background: none;
+     border: 2px solid;
+     color: black;
+     padding: 5px;
+     font-size: 20px;
+     margin-top: 20px;
+     cursor: pointer;
+ }
+
+ .submit-btn:hover{
+     color: #395D33;
+     background-color: #83F52C;
+     transition: .5s;
+}
+
+.login_opt{
+    float: right;
+}
+
+.login_opt a{
+    text-decoration: none;
+    color: green;
+}
+
+.login_opt a:hover{
+    color:darkgreen;
+    transition: .4s;
+}
+
+@media(max-width:600px){
+    .login-box {
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+    }
+}
